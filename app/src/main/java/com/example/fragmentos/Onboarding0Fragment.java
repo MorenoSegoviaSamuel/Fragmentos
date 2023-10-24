@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class Onboarding1Fragment extends Fragment {
+public class Onboarding0Fragment extends Fragment {
 
     Button botonSiguiente;
     Button skip;
@@ -23,7 +23,7 @@ public class Onboarding1Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_onboarding1, container, false);
+        return inflater.inflate(R.layout.fragment_onboarding0, container, false);
     }
 
     @Override
@@ -38,14 +38,13 @@ public class Onboarding1Fragment extends Fragment {
         botonSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_onboarding1Fragment_to_onboarding2Fragment);
+                navController.navigate(R.id.action_onboarding0Fragment_to_onboarding1Fragment);
             }
         });
-
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_onboarding1Fragment_to_homeFragment);
+                navController.navigate(R.id.action_onboarding0Fragment_to_homeFragment);
             }
         });
     }
